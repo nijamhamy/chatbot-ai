@@ -1,0 +1,29 @@
+.ai-navbar {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+}
+
+.nav-btn {
+    font-weight: 600;
+    padding: 6px 15px !important;
+    border-radius: 8px !important;
+    transition: 0.2s ease-in-out;
+}
+
+/* Hover Effects */
+.nav-btn:hover {
+    transform: translateY(-2px);
+    opacity: 0.9;
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+    .ai-navbar {
+        padding: 10px;
+    }
+
+    .nav-btn {
+        width: 100%;
+        margin-bottom: 8px;
+    }
+}

@@ -1,0 +1,57 @@
+.sidebar {
+    width: 260px;
+    background: #07172F;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 20px 10px;
+    height: 100vh;
+    transition: width 0.25s ease;
+}
+
+/* Collapsed Sidebar */
+.sidebar.collapsed {
+    width: 75px;
+}
+
+/* Collapse Button */
+.collapse-btn {
+    font-size: 22px;
+    color: white;
+    margin-bottom: 25px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.menu-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 12px 14px;
+    background: rgba(255, 255, 255, 0.08);
+    border: none;
+    border-radius: 8px;
+    color: white;
+    cursor: pointer;
+    font-size: 15px;
+    transition: 0.2s ease-in-out;
+}
+
+.menu-item:hover {
+    background: rgba(255, 255, 255, 0.18);
+}
+
+.sidebar.collapsed .menu-item span {
+    display: none;
+}
+
+/* Icons center when collapsed */
+.sidebar.collapsed .menu-item {
+    justify-content: center;
+}
